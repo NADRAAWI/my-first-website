@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Websire</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        background: #f1f1f1;
+    }
+    
+    /*header/blog title*/
+    .header{
+        padding: 30px;
+        text-align: center;
+        background: white;
+    }
+    
+    .header h1{
+        font-size: 50px;
+    }
+    
+    /*top navigation bar*/
+    .topnav{
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    /*style the topnav link*/
+    .topnav{
+        float:left;
+        display: block;
+        color: f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    /*color on hover*/
+    .topnav a:hover{
+        background-color: #ddd;
+        color: black;
+    }
+    
+    /*columns floats*/
+    /*leftcolumn*/
+    .leftcolmn{
+        float:left ;
+        width: 75%; 
+    }
+    
+    /*rightcolumn*/  
+    .righttcolmn{
+        float:left ;
+        width: 25%; 
+        padding: 20px;
+    }
+    
+    /*fake image*/
+    .fake image{
+        background-color:#aaa;
+        width: 100px;
+        padding: 20px;
+        margin-top: 5px;
+    }
+    
+    /*card effecct*/
+    .card{
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    /*row after columns*/
+    .row:after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+    
+    /*footer*/
+    .footer{
+        background-color: #ddd;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;  
+    }
+    
+    /*resposive layout - when the screen is less than 800px wide, make the two columns stack on top  of each other instead of next to each other */
+    @media screen and (max: width 800%;) {
+    .leftcolumn, .rightcolumn {
+        width: 100px;
+        padding: 0;
+        }
+    }
+    
+    /*resposive layout - when the screen is less than 800px wide, make the two columns stack on top  of each other instead of next to each other */
+    @media screen and (max: width 800%;) {
+        .topnav a {
+            width: 100px;
+            float: none;
+            }
+        }</style>
+</head>
+<body>
+    
+    <div class="header">
+    <h1>NADRAAWI NEWS</h1>
+    <p>Resize the b</p>
+</div>
+
+<div class="topnav">
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#" style="float:right">link</a>
+</div>
+
+<div class="row">
+ <div class="leftcolumn">
+<div class="card">
+    <h2>News Of The Day</h2>
+    <h5>man of the mach 11. 22. 22</h5>
+    <div class="fakeimg" style="height:200px;" >image</div>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex iure numquam, voluptates quidem temporibus quos repellendus praesentium hic consequatur, laudantium nulla provident ipsum ab sequi fuga, consectetur expedita perspiciatis vero! Perspiciatis deserunt, sint architecto quod reiciendis aspernatur omnis, ea consequatur qui eaque ipsa! Quasi voluptatem omnis quaerat deleniti. Neque natus, iste quia quod optio perspiciatis hic eaque, ab dolor aspernatur molestias quisquam cupiditate? Ullam voluptatibus dicta reprehenderit voluptatem mollitia, a iure vitae, eaque cupiditate, accusamus vel. Quo esse mollitia magnam pariatur! Soluta veniam id doloribus est perspiciatis ipsum aliquam consequatur iste adipisci, cum esse quidem. Omnis ut at laudantium recusandae?</p>
+</div>
+
+
+   <div class="card">
+       <h2>News Of The Day</h2>
+       <h5>man of the mach 11. 22. 22</h5>
+       <div class="fakeimg" style="height:200px;" >image</div>
+       <p>Lorem, ipsum dolor.</p>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex iure numquam, voluptates quidem temporibus quos repellendus praesentium hic consequatur, laudantium nulla provident ipsum ab sequi fuga, consectetur expedita perspiciatis vero! Perspiciatis deserunt, sint architecto quod reiciendis aspernatur omnis, ea consequatur qui eaque ipsa! Quasi voluptatem omnis quaerat deleniti. Neque natus, iste quia quod optio perspiciatis hic eaque, ab dolor aspernatur molestias quisquam cupiditate? Ullam voluptatibus dicta reprehenderit voluptatem mollitia, a iure vitae, eaque cupiditate, accusamus vel. Quo esse mollitia magnam pariatur! Soluta veniam id doloribus est perspiciatis ipsum aliquam consequatur iste adipisci, cum esse quidem. Omnis ut at laudantium recusandae?</p>
+   </div>
+
+   <div class="rightcolumn">
+   <div class="card">
+       <h2>News Of The Day</h2>
+       <div class="fakeimg" style="height:100px;" >image</div>
+       <p>Lorem, ipsum dolor.</p>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex iure numquam, voluptates quidem temporibus quos repellendus praesentium hic consequatur, laudantium nulla provident ipsum ab sequi fuga, consectetur expedita perspiciatis vero! Perspiciatis deserunt, sint architecto quod reiciendis aspernatur omnis, ea consequatur qui eaque ipsa! Quasi voluptatem omnis quaerat deleniti. Neque natus, iste quia quod optio perspiciatis hic eaque, ab dolor aspernatur molestias quisquam cupiditate? Ullam voluptatibus dicta reprehenderit voluptatem mollitia, a iure vitae, eaque cupiditate, accusamus vel. Quo esse mollitia magnam pariatur! Soluta veniam id doloribus est perspiciatis ipsum aliquam consequatur iste adipisci, cum esse quidem. Omnis ut at laudantium recusandae?</p>
+   </div>
+
+<div class="card">
+<h3>news Of The Night</h3>
+<div class="fakeimg"> <p>image</p> </div>
+<div class="fakeimg"> <p>image</p> </div>
+<div class="fakeimg"> <p>image</p> </div>
+</div>
+
+  <div class="card">
+<h3>News Of The Afternoun</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora perspiciatis recusandae distinctio reprehenderit!</p>
+  </div>
+ </div>
+</div>
+
+<div class="Footer">
+    <h2>footer</h2>
+</div>
+
+</body>
+</html>
